@@ -35,8 +35,8 @@ group :memcached_support do
   gem 'dalli', '~> 1.0.1'
 end
 
-group :eventmachine_support do
-  gem 'eventmachine', '~> 0.12.10'
-end
+#group :eventmachine_support do
+#  gem 'eventmachine', '~> 0.12.10'
+#end
 
 gemspec

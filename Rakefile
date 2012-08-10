@@ -19,16 +19,6 @@ require 'rspec/core/rake_task'
 require 'hanna/rdoctask'
 require 'rake/contrib/sshpublisher'
 
-begin
-  require 'metric_fu'
-  MetricFu::Configuration.run do |config|
-    config.rcov[:test_files] = ['spec/**/*_spec.rb']
-    config.rcov[:rcov_opts] << "-Ispec" # Needed to find spec_helper
-  end
-rescue LoadError
-  puts 'metric_fu is not available. Install it with: gem install jscruggs-metric_fu -s http://gems.github.com'
-end
-
 desc 'Default: run spec tests.'
 task :default => 'rspec:unit'
 

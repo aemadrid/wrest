@@ -31,11 +31,11 @@ Gem::Specification.new do |s|
   # Test dependencies
   s.add_development_dependency "rspec", ["~> 2.6"]
   s.add_development_dependency "sinatra", ["~> 1.0.0"]
-  s.add_development_dependency "metric_fu" unless Object.const_defined?('RUBY_ENGINE') && RUBY_ENGINE =~ /rbx/
 
   s.add_runtime_dependency "activesupport", ["~> 3"]
   s.add_runtime_dependency "builder", ["> 2.0"]
-  s.add_runtime_dependency("multi_json", ["~> 1.0"])
+  s.add_runtime_dependency "json", ["~> 1.5.1"]
+  s.add_runtime_dependency "multi_json", ["~> 1.0"]
   
   case RUBY_PLATFORM
   when /java/
