@@ -10,3 +10,5 @@ spec/wrest/meh_spec.rb
 *.iml
 tmtags
 .gemspec
+.rvmrc
+Gemfile.lock
